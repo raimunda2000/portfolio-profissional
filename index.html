@@ -5,193 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Profissional - Auxiliar de Serviços Gerais</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      background: #f5f5f5;
-      color: #333;
-    }
+    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body {background:#f4f6f9;color:#333;line-height:1.6;}
 
     header {
-      background: linear-gradient(90deg, #111, #333);
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    header h1 {
-      font-size: 22px;
+      background:#111;
+      color:#fff;
+      padding:15px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
     }
 
     nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: bold;
+      color:#fff;
+      margin-left:15px;
+      text-decoration:none;
+      font-weight:bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover {color:#00c3ff;}
 
     .hero {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
+      background:linear-gradient(120deg,#111,#444);
+      color:#fff;
+      text-align:center;
+      padding:60px 20px;
     }
 
-    .hero h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
+    .hero h1 {font-size:30px;margin-bottom:10px;}
+    .hero p {font-size:16px;opacity:0.9;}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
+    .container {max-width:1100px;margin:auto;padding:20px;}
 
-    section h2 {
-      margin-bottom: 15px;
-    }
+    section {margin-top:30px;}
+
+    h2 {margin-bottom:15px;border-left:5px solid #00c3ff;padding-left:10px;}
 
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
     }
 
     .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      background:#fff;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform:translateY(-6px);
+      box-shadow:0 8px 18px rgba(0,0,0,0.2);
     }
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+    .card h3 {margin-bottom:10px;}
 
     .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
+      display:inline-block;
+      margin-top:10px;
+      color:#00c3ff;
+      text-decoration:none;
+      font-weight:bold;
     }
 
     footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      margin-top:40px;
+      background:#111;
+      color:#fff;
+      text-align:center;
+      padding:20px;
     }
 
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
+    @media (max-width:600px){
+      header{flex-direction:column;text-align:center;}
+      nav{margin-top:10px;}
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Portfólio Profissional</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Experiências</a>
-    </nav>
-  </header>
+<header>
+  <h1>Portfólio Profissional</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Experiências</a>
+  </nav>
+</header>
 
-  <div class="hero">
-    <h2>Auxiliar de Serviços Gerais</h2>
-    <p>Profissional dedicada, organizada e comprometida com qualidade no serviço.</p>
+<div class="hero">
+  <h1>Auxiliar de Serviços Gerais</h1>
+  <p>Organização, limpeza e dedicação com excelência no trabalho.</p>
+</div>
+
+<section id="sobre">
+  <div class="container">
+    <h2>Sobre a profissional</h2>
+    <p>Profissional com experiência em serviços gerais, atuando na limpeza, organização e conservação de ambientes residenciais e comerciais. Possui compromisso com a qualidade, atenção aos detalhes e responsabilidade no cumprimento das tarefas. Destaca-se pela pontualidade, disciplina e facilidade em trabalhar em equipe.</p>
   </div>
+</section>
 
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre a profissional</h2>
-      <p>Profissional da área de serviços gerais com experiência em limpeza, organização e conservação de ambientes. Atua com responsabilidade, garantindo qualidade e eficiência nas tarefas. Possui facilidade de aprendizado, pontualidade e bom relacionamento em equipe.</p>
-    </div>
-  </section>
+<section id="projetos">
+  <div class="container">
+    <h2>Principais Competências</h2>
+    <div class="projects" id="listaProjetos"></div>
+  </div>
+</section>
 
-  <section id="projetos">
-    <div class="container">
-      <h2>Experiências</h2>
-      <div class="projects" id="listaProjetos"></div>
-    </div>
-  </section>
+<footer>
+  <p>© 2026 - Portfólio Profissional</p>
+  <p>Email: profissional@email.com</p>
+  <p>Brasil</p>
+</footer>
 
-  <footer>
-    <p>© 2026 - Portfólio Profissional</p>
-    <p>Contato: profissional@email.com</p>
-    <p>Localização: Brasil</p>
-  </footer>
+<script>
+const projetos = [
+  {nome:"Limpeza Profissional",descricao:"Execução de limpeza completa em ambientes, garantindo higiene e conservação.",link:"#"},
+  {nome:"Organização de Espaços",descricao:"Manutenção de ambientes organizados e agradáveis para uso diário.",link:"#"},
+  {nome:"Uso de Produtos",descricao:"Aplicação correta de produtos de limpeza conforme cada superfície.",link:"#"},
+  {nome:"Trabalho em Equipe",descricao:"Boa comunicação e colaboração com colegas de trabalho.",link:"#"},
+  {nome:"Pontualidade",descricao:"Cumprimento de horários e responsabilidades com disciplina.",link:"#"},
+  {nome:"Atenção aos Detalhes",descricao:"Cuidado minucioso com cada tarefa executada.",link:"#"}
+];
 
-  <script>
-    const projetos = [
-      {
-        nome: "Limpeza e Conservação",
-        descricao: "Experiência em limpeza geral, organização de ambientes e conservação de espaços.",
-        link: "#"
-      },
-      {
-        nome: "Uso de Produtos de Limpeza",
-        descricao: "Conhecimento no uso correto de produtos e materiais adequados para cada ambiente.",
-        link: "#"
-      },
-      {
-        nome: "Organização de Ambientes",
-        descricao: "Capacidade de manter ambientes limpos, organizados e agradáveis.",
-        link: "#"
-      },
-      {
-        nome: "Responsabilidade e Pontualidade",
-        descricao: "Comprometimento com horários, qualidade e execução correta das tarefas.",
-        link: "#"
-      }
-    ];
+const container = document.getElementById("listaProjetos");
 
-    const container = document.getElementById("listaProjetos");
+projetos.forEach(p=>{
+  const div=document.createElement("div");
+  div.classList.add("card");
 
-    projetos.forEach(projeto => {
-      const div = document.createElement("div");
-      div.classList.add("card");
+  div.innerHTML=`
+    <h3>${p.nome}</h3>
+    <p>${p.descricao}</p>
+    <a href="${p.link}">Saiba mais</a>
+  `;
 
-      div.innerHTML = `
-        <h3>${projeto.nome}</h3>
-        <p>${projeto.descricao}</p>
-        <a href="${projeto.link}" target="_blank">Detalhes</a>
-      `;
-
-      container.appendChild(div);
-    });
-  </script>
+  container.appendChild(div);
+});
+</script>
 
 </body>
 </html>
